@@ -1,7 +1,12 @@
+import Link from 'next/link'
+
 const Index = () =>(
     <div>
-        <h1>Home Page</h1>
+        <h1>Home page</h1>
+        <Link href='/blog'>
+            <button>Blog</button>
+        </Link>
     </div>
 )
 
-export default  Index;
+export default Index;
