@@ -14,11 +14,11 @@ export default async function Home() {
 
       {/* Hero */}
       <section className="text-center mb-20">
-        <p className="text-green-400 text-xs tracking-[0.3em] uppercase mb-4">
+        <p className="text-red-400 text-xs tracking-[0.3em] uppercase mb-4">
           Powered by RestCountries API
         </p>
         <h1 className="text-6xl md:text-8xl font-bold text-white mb-6 leading-none">
-          World<span className="text-green-400">Scope</span>
+          World<span className="text-red-400">Scope</span>
         </h1>
         <p className="text-white/50 max-w-xl mx-auto text-base leading-relaxed mb-10">
           Explore every nation on Earth. Population, geography, languages,
@@ -26,7 +26,7 @@ export default async function Home() {
         </p>
         <Link
           href="/countries"
-          className="inline-block px-8 py-3 bg-green-400 text-black text-sm font-semibold tracking-wide rounded-full hover:bg-orange-300 transition-colors"
+          className="inline-block px-8 py-3 bg-red-400 text-black text-sm font-semibold tracking-wide rounded-full hover:bg-red-300 transition-colors"
         >
           Explore Countries →
         </Link>
@@ -44,7 +44,7 @@ export default async function Home() {
           <p className="text-white/40 text-xs tracking-widest uppercase mb-2">World Population</p>
           <p className="text-5xl font-bold text-white">
             {(totalPopulation / 1_000_000_000).toFixed(1)}
-            <span className="text-green-400 text-2xl ml-1">B</span>
+            <span className="text-red-400 text-2xl ml-1">B</span>
           </p>
         </div>
 
@@ -63,7 +63,7 @@ export default async function Home() {
             <Link
               key={region}
               href={`/countries?region=${region}`}
-              className="px-4 py-2 border border-white/10 rounded-full text-white/60 text-sm hover:border-green-400 hover:text-green-400 transition-colors"
+              className="px-4 py-2 border border-white/10 rounded-full text-white/60 text-sm hover:border-green-400 hover:text-red-400 transition-colors"
             >
               {region}
             </Link>

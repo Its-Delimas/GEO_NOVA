@@ -13,7 +13,7 @@ export default function CountryCard({ country }: Props) {
 
                 {/* flag */}
                 <div className="h-40 overflow-hidden">
-                    <Image src={country.flags.svg} alt={country.flags.alt ?? `Flag of ${country.name.common}`}
+                    <img src={country.flags.svg} alt={country.flags.alt ?? `Flag of ${country.name.common}`}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
                 </div>
 
