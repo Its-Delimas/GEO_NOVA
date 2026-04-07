@@ -6,7 +6,7 @@ export default function Navbar() {
 
             {/* Logo */}
             <Link href="/" className="text-white font-bold text-xl tracking-widest uppercase ">
-                World<span className="text-green-400">Scope</span>
+                World<span className="text-red-400">Scope</span>
             </Link>
 
             {/* Nav Links */}

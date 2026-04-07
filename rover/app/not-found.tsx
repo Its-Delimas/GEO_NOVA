@@ -10,12 +10,12 @@ export default function NotFound() {
             </h1>
 
             <p className='text-white/40 max-w-sm leading-relaxed mb-10'>
-                That country or page doesn't exist in our records. Double-check the URl or head back to the explorer.
+                That country or page does not exist in our records. Double-check the URl or head back to the explorer.
             </p>
 
-            <Link href="/countres" className="px-6 py-3 bg-red-400 text-black text-sm font-semibold rounded-full hover:bg-red-300 transition-colors">
+            <Link href="/countries" className="px-6 py-3 bg-red-400 text-black text-sm font-semibold rounded-full hover:bg-red-300 transition-colors">
                 Back to Countries
             </Link>
         </main>
-    )
+    );
 }
