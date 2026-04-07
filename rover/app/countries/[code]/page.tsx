@@ -1,5 +1,6 @@
 import { getCountryByCode, getAllCountries } from "@/lib/countries";
 import { notFound } from "next/navigation";
+import Link from "next/link";
 
 type Props = {
     params: Promise<{ code: string }>;
@@ -39,13 +40,13 @@ export default async function CountryPage({ params }: Props) {
         <main className="min-h-screen px-6 py-20 max-w-5xl mx-auto">
 
             {/* Back button */}
-            <a
+            <Link
 
                 href="/countries"
                 className="inline-flex items-center gap-2 text-white/40 hover:text-white text-sm mb-12 transition-colors"
             >
                 ← Back to Countries
-            </a>
+            </Link>
 
             {/* Hero */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center mb-20">
@@ -91,14 +92,14 @@ export default async function CountryPage({ params }: Props) {
                         </p>
                         <div className="flex flex-wrap gap-3">
                             {country.borders.map((border) => (
-                                <a
+                                <Link
 
                                     key={border}
                                     href={`/countries/${border.toLowerCase()}`}
                                     className="px-4 py-2 border border-white/10 rounded-full text-white/60 text-xs hover:border-red-400 hover:text-red-400 transition-colors"
                                 >
                                     {border}
-                                </a>
+                                </Link>
                             ))}
                         </div>
                     </div >

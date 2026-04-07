@@ -1,4 +1,4 @@
-export default function Loading() {
+export default function loading() {
     return (
         <main className="min-h-screen px-6 py-20 max-w-7x1 mx-auto animate-pulse">
             {/* Header skeleton */}
