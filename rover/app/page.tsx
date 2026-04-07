@@ -37,12 +37,12 @@ export default async function Home() {
 
         <div className="border border-white/10 rounded-2xl p-8 bg-white/5">
           <p className="text-white/40 text-xs tracking-widest uppercase mb-2">Total Countries</p>
-          <p className="text-5xl font-bold text-white">{totalCountries}</p>
+          <p className="text-4xl md:text-5xl font-bold text-white">{totalCountries}</p>
         </div>
 
         <div className="border border-white/10 rounded-2xl p-8 bg-white/5">
           <p className="text-white/40 text-xs tracking-widest uppercase mb-2">World Population</p>
-          <p className="text-5xl font-bold text-white">
+          <p className="text-4xl md:text-5xl font-bold text-white">
             {(totalPopulation / 1_000_000_000).toFixed(1)}
             <span className="text-red-400 text-2xl ml-1">B</span>
           </p>
@@ -50,7 +50,7 @@ export default async function Home() {
 
         <div className="border border-white/10 rounded-2xl p-8 bg-white/5">
           <p className="text-white/40 text-xs tracking-widest uppercase mb-2">Regions</p>
-          <p className="text-5xl font-bold text-white">{regions.length}</p>
+          <p className="text-4xl md:text-5xl font-bold text-white">{regions.length}</p>
         </div>
 
       </section>
